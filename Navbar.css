@@ -1,0 +1,58 @@
+body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.navbar {
+    position: fixed; /* Keeps the navbar at the top */
+    top: 0; /* Ensures it is at the top */
+    left: 0; /* Ensures it is aligned to the left */
+    right: 0; /* Ensures it stretches to the right */
+    display: flex;
+    justify-content: space-between; /* Distributes space between elements */
+    align-items: center; /* Vertically centers items */
+    padding: 10px 20px; /* Padding around the navbar */
+    background-color: white; /* Background color of the navbar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    z-index: 1000; /* Ensures the navbar is above other content */
+    width: 100%; /* Makes sure the navbar takes the full width */
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    color: black; /* Color of the logo */
+}
+
+.logo-image {
+    width: 15%; /* Adjust the size as needed */
+    height: auto; /* Maintains aspect ratio */
+}
+
+.navbar-links {
+    list-style: none; /* Removes bullet points */
+    display: flex; /* Displays links in a row */
+    gap: 20px; /* Space between links */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    color: black;
+}
+
+.navbar-links li {
+    cursor: pointer; /* Changes cursor to pointer on hover */
+}
+
+.navbar-user {
+    display: flex; /* Ensures buttons are in a row */
+    align-items: center; /* Vertically centers buttons */
+}
+
+.navbar-user button {
+    margin-left: 10px; /* Space between buttons */
+    background-color: #ff385c; /* Button color */
+    border: none; /* No border */
+    padding: 8px 15px; /* Button padding */
+    color: white; /* Text color */
+    border-radius: 20px; /* Rounded corners */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+}
